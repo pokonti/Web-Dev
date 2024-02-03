@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Facebook login page</title>
-    <link rel="icon"  href="2.png" type="image/png">
     <style>
         body {
             /* background-color: rgb(233, 233, 242); */
@@ -11,28 +10,32 @@
             font-family:Arial, Helvetica, sans-serif;
         }
         .title {
-            margin-top: 200px;
-            margin-left: 250px;
-            float:left;
+            position: absolute;
+            margin-top: 40px;
+            margin-left: 10%;
         }
         #title-text {
-            
             font-size: 30px;
             width: 60%;
-            margin-left: 43px;
-            margin-top: 0;
+            margin-left: 5%;
+            margin-top: -20px;
 
         }
+        #main {
+            margin-left: 60%;
+            margin-top: 180px;
+            text-align: center;
+            
+        }
         #container {
+            padding: 20px;
             width: 370px;
             height: auto;
-            margin-left: 1000px;
-            margin-top: 180px;
+            position: absolute; 
             background-color:white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            position: absolute;
             border-radius: 8px;
-            padding: 20px;
+            
 
         }
         input[type="text"], input[type="password"] {
@@ -76,7 +79,6 @@
 
         .button2 {
             font-size: 20px;
-            margin-left: 85px;
             width: 200px;
             background-color: rgb(40, 182, 40);
         }
@@ -101,51 +103,56 @@
         }
         #hh {
             position: absolute;
-            margin-top: 600px;
-            margin-left: -145px;
+            margin-top: 410px;
+            margin-left: -18%;
+            
         }
         #bb {
             color: black;
             font-weight: bold;
             text-decoration: none;
         }
-        .bottom {
+        .footer {
             display: block;
             position: absolute;
             width: 100%;
-            height: auto;
-            margin-top: 815px;
+            /* height: 50%; */ 
+            /* margin-top: 815px; */
+            bottom: 0;
+            left:0;
             background-color: white;
             text-align: center;
             color:gray;
             font-size: 12px;
             padding: 60px 0;
-            
         }
        
     </style>
 </head>
 <body>
     <div class="title">
-    <img src="1.svg" width="450">
-    <p id="title-text">Facebook helps you connect and share with the people in your life.</p>
+        <img src="1.svg" width="450">
+        <p id="title-text">Facebook helps you connect and share with the people in your life.</p>
     </div>
-    <div id="container">
-        <form action="">
-            <input type="text" placeholder="Email address or phone number" required>
-            <input type="password" placeholder="Password" required>
-        </form>
-        <button class="button button1" type="button">Log in</button>
-        <h6 ><a id="txt" href="a">Forgotten password?</a></h6>
-       <hr size="0.1px" color="#DCDCDC" />
-       <button class="button button2" type="button">Create new account</button>
+    <div id="main">
+        <div id="container">
+            <form action="">
+                <input type="text" placeholder="Email address or phone number" required>
+                <input type="password" placeholder="Password" required>
+            </form>
+            <button class="button button1" type="button">Log in</button>
+            <h6 ><a id="txt" href="a">Forgotten password?</a></h6>
+            <hr size="0.1px" color="#DCDCDC" />
+            <button class="button button2" type="button">Create new account</button>
+        </div>
+        <h7 id="hh"><a id="bb" href="aa">Create a Page</a> for a celebrity, brand or business.</h7>
     </div>
-    <h7 id="hh"><a id="bb" href="aa">Create a Page</a> for a celebrity, brand or business.</h7>
-    <section class="bottom">
-        <h7>English  Русский  Türkçe  Қазақша  日本語</h7><br>
-        <hr size="0.1px" width="300px" color="#DCDCDC"/>
-        <h7>Sign Up  Log in  Messenger  Facebook Lite Video</h7>
+        <div class="footer">
+            <h7>English  Русский  Türkçe  Қазақша  日本語</h7><br>
+            <hr size="0.1px" width="300px" color="#DCDCDC"/>
+            <h7>Sign Up  Log in  Messenger  Facebook Lite Video</h7>
 
-    </section>
+        </div>
+  
 </body>
 </html>
