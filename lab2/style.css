@@ -1,0 +1,127 @@
+.header {
+    /* position: fixed; */
+    top:0;
+    left:0;
+    width:100%;
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+@font-face {
+    font-family: Microsoft;
+    src: url(lab2/gldn-Soft-CP-OneDriveCampaignRefresh-2.woff2);
+}
+@font-face {
+    font-family: Microsoft2;
+    src: url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2);
+}
+
+.navbar-left {
+    margin-top: 5px;
+    margin-left: 16px;
+}
+
+.navbar-right {
+    margin-top: 6px;
+    margin-left: 690px;
+}
+.navbar-right a img {
+    position: absolute;
+    margin-top: -10px;
+}
+.navbar-left a, .navbar-right a {
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+    cursor: pointer;
+    font-family: Micosoft;
+    font-size: 14px;
+
+}
+.title{
+    margin-top: 0.1%;
+    /* position: relative; */
+    text-align: center;
+    max-width: auto;
+}
+
+.text-block {
+    position: absolute;
+    top: 200px;
+    left: 170px;
+    color: white;
+    font-family: Micosoft2;
+    text-align: left;
+    font-size: 18px;
+
+}
+.text-block h1 {
+    width: 50%;
+}
+.text-block p {
+    width: 60%;
+}
+/* .title p {
+    position: absolute;
+    margin: 340px 150px;
+    font-size: 18px;
+    z-index: 100;
+    color:white;
+    width: 35%;
+} */
+
+.suretter {
+    margin-top: 8%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-family: Microsoft2;
+}
+.suretter img {
+    padding-right: 20px;
+}
+.text {
+    width: 370px;
+}
+.text a {
+    color: black;
+    text-decoration: none;
+    
+}
+.text a:hover{
+    cursor: pointer;
+}
+.text h1{
+    font-size: 30px;
+}
+.text-block button {
+    color: white;
+    background-color: rgb(24, 104, 185);
+    border-style: solid;
+    padding: 10px 12px;
+    font-size: 16px;
+    border-width: 0.01px;
+    border-color: rgb(24, 104, 185);
+    border-radius: 2px;
+    
+}
+.text-block button:hover {
+    background-color: rgb(23, 89, 155);
+    cursor: pointer;
+}
+.links{
+    color:rgb(70, 130, 180);
+    
+}
+.links i{
+    padding-left: 10px;
+    
+}
+.links:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
