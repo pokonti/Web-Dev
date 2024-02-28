@@ -1,0 +1,25 @@
+<app-product-list></app-product-list>
+<ul>
+    <li *ngFor="let book of books; let i = index">
+        
+            <a href="{{ book.linkKaspi }}">
+                <img src="{{ book.photo }}" alt="">
+            </a>
+            <div class="content">
+                <h2>"{{ book.title }}"-{{ book.author }}</h2>
+                <p>{{ book.description }}</p>
+                
+                <p>Price: {{ book.price }} tg</p>
+            </div>
+            <div class="buttons">
+                <span (click)="toggleLike(book)">💔</span>
+                <p>Likes {{ book.like }}</p>  
+                <a href="https://t.me/share/url?url={{ book.linkKaspi }}&text=Look!">
+                    <button class="button">Share</button>
+                </a>
+                <button class="button" (click)="removeItem(i)">
+                    ✕
+                </button>
+            </div>  
+    </li>
+</ul>

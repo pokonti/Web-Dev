@@ -1,0 +1,50 @@
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    height: 350px;
+    width: 700px;
+    border: 1px solid whitesmoke;
+    margin: 10px;
+    display: flex;
+    flex-direction:row;
+    overflow: hidden;
+    text-decoration: none;
+    
+}
+img {
+    height: 350px;
+    width: 250px;
+}
+li a:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.content {
+    font-size: 15px;
+    padding: 5px 15px;
+    color: black;
+    overflow: scroll;
+    position: relative;
+}
+.favorite{
+    position: absolute;
+    right: 25px;
+    font-size: 30px;
+}
+.buttons {
+    text-align:center;
+}
+.button {
+    background-color: rgb(188, 143, 143);
+    border: none;
+    font-size: 15px;
+    margin: 10px;
+    width: 60px;
+}
