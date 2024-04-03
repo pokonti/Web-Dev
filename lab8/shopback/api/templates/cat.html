@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="box">
+    <a href="#"><h2>{{ categories.name }}</h2></a>
+    <p>{{ categories.products.count }} items</p>
+</div>
+{% endblock %}

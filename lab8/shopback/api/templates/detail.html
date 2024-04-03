@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="box">   
+    <h2>{{ product.name }}</h2>
+    <p>Price: {{ product.price }} tg</p>
+    <p>{{ product.description }}</p>
+    <p>{{ product.is_active }}</p>
+</div>
+{% endblock %}

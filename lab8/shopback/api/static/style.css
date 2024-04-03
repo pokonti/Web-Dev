@@ -1,0 +1,13 @@
+.box {
+    width: 200px;
+    border: 1px solid grey;
+    padding: 10px;
+    
+}
+p {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 10px;
+    color: grey;
+ 
+    
+}
