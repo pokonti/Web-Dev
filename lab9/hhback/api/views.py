@@ -44,9 +44,14 @@ def vacancies_by_company(request, pk):
     return JsonResponse(vacancies_json, safe = False)
 
 def vacancies(request):
-    vacancies = Vacancy.objects.all()
-    vacancies_json = [vacancy.to_json() for vacancy in vacancies]
-    return JsonResponse(vacancies_json, safe = False)
+    if request.method == 'GET':
+        vacancies = Vacancy.objects.all()
+        vacancies_json = [vacancy.to_json() for vacancy in vacancies]
+        return JsonResponse(vacancies_json, safe = False)
+    # elif request.method == 'POST':
+    #     data = json.loads(request.body)
+    #     vacancy = Vacancy.objects.create(name=data.get("name"), description=data.get("description"), city=data.get("salary"), company=data.get("company"))
+    #     return JsonResponse(vacancy.to_json())
 
 def vacancy(request,pk):
     vacancy = get_object_or_404(Vacancy, pk=pk)
